@@ -1,6 +1,7 @@
 package AmazonTests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -54,6 +55,38 @@ public class WindowsTabsHandles {
         driver.findElement(By.xpath("//a[@title='Bus Tickets']")).click();
        String BusPageTitle =  driver.getTitle();
         System.out.println("This is third page title " + BusPageTitle + ": " + driver.getWindowHandle());
+    }
+
+    @Test
+    public void findTextfromNewWindow() throws InterruptedException {
+        driver.get("https://omayo.blogspot.com/");
+        driver.manage().window().maximize();
+
+        //open new tab from below element
+        driver.findElement(By.id("selenium143")).click();
+
+        //open new window from below element
+        driver.findElement(By.linkText("Open a popup window")).click();
+        Thread.sleep(5000);
+
+        Set<String> windowHandles = driver.getWindowHandles();
+
+        for (String windows: windowHandles) {
+            driver.switchTo().window(windows);
+            try {
+                String newwindowText = driver.findElement(By.xpath("//h3[normalize-space()='New Window']")).getText();
+                System.out.println("Text from new window" + newwindowText);
+                break;
+            }catch (NoSuchElementException e){
+                System.out.println(e);
+                driver.close();
+            }
+        }
+
+
+
+
+
     }
 
     @AfterTest
