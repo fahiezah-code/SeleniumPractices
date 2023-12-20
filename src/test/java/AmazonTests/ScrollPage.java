@@ -31,9 +31,10 @@ public class ScrollPage {
 
         //scroll until to element
 
-       WebElement ele = driver.findElement(By.id("myDropdown"));
+       WebElement ele = driver.findElement(By.id("myBtn"));
 
-       js.executeScript("arguments[0].scrollIntoView()",ele);
+
+       js.executeScript("arguments[0].scrollIntoView();",ele);
         Thread.sleep(3000);
 
 
