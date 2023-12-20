@@ -1,4 +1,4 @@
-package AmazonTests;
+package SeleniumPractise;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
