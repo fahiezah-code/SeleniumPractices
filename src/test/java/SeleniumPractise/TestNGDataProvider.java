@@ -28,6 +28,7 @@ public class TestNGDataProvider {
     {
         Object[][] data = {{"testdata1","1234"},{"testdata3","4567"},{"testdata1","8920"}};
         return data;
+
     }
 
 
