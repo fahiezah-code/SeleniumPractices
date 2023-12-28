@@ -75,7 +75,7 @@ public class VerifyBrokenLinks {
         for(WebElement ele :urlLinks) {
            String links = ele.getAttribute("href");
 
-           URL url = new URL(links.trim());
+           URL url = new URL(links.trim());  // trim spacing
 
            if(!url.getProtocol().equals("http"))
            {
