@@ -2,7 +2,7 @@ package javapractise;
 
 import java.io.*;
 
-public class FileExercise {
+public class FileOutInPutStreamExercise {
 
     public static void main(String[] args) {
 
