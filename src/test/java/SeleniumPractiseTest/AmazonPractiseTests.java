@@ -1,4 +1,4 @@
-package SeleniumPractise;
+package SeleniumPractiseTest;
 
 import PageObjects.PractisePageObject;
 import org.openqa.selenium.WebDriver;

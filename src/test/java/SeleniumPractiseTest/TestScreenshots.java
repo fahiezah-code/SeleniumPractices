@@ -1,4 +1,4 @@
-package SeleniumPractise;
+package SeleniumPractiseTest;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;

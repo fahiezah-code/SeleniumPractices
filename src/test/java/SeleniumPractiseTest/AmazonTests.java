@@ -1,4 +1,4 @@
-package SeleniumPractise;
+package SeleniumPractiseTest;
 import PageObjects.AmazonPageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package SeleniumPractise;
+package SeleniumPractiseTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import javax.net.ssl.HttpsURLConnection;
 import java.io.IOException;
 import java.net.*;
 import java.util.List;
