@@ -9,8 +9,8 @@ public class PrintStartRow {
 
     public static void printStars(int row){
 
-        for(int i=0; i<row; i++){
-            for(int j=0; j<row; j++) {
+        for(int i=row; i>0; i--){
+            for(int j=0; j<i; j++) {
                 System.out.print("*" + " ");
             }
             System.out.println( );

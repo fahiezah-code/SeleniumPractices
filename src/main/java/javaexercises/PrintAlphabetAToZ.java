@@ -19,7 +19,7 @@ public class PrintAlphabetAToZ {
         double k = 1.1;
 
         while(k<=15){
-            System.out.printf("%.1f", k);
+            System.out.printf("%.2f", k);
             System.out.print(" ");
             k++;
         }

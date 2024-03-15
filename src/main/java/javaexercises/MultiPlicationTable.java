@@ -13,7 +13,7 @@ public class MultiPlicationTable {
         System.out.println("Enter the range");
         int range = sc.nextInt();
         for(int i=1; i<=range; i++){
-            System.out.printf("%d = %d * %d \n",num,i,num*i);
+            System.out.printf("%d * %d = %d \n",num,i,num*i);
         }
 
 

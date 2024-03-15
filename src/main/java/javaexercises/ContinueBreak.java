@@ -9,14 +9,14 @@ public class ContinueBreak {
             if (x == 30) {
                 continue;
             }
-            System.out.print(x);
+            System.out.print("from x value"+x);
             System.out.print("\n");
         }
             for(int y : numbers){
-                if(y == 40){
+                if(y == 20){
                     break;
                 }
-                System.out.print(y+ " ");
+                System.out.println(y+ " "+ "Y value");
             }
         }
 
