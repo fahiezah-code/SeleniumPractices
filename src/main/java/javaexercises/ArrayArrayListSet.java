@@ -1,6 +1,7 @@
 package javaexercises;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class ArrayArrayListSet {
 
@@ -67,4 +68,46 @@ public class ArrayArrayListSet {
         // return the object
 
 
+    public static final class Employee {
+
+        private final String name;
+        private final Date doj;
+        private final List<String> mobile;
+
+        public Employee(String name, Date doj, List<String> mobile){
+            this.name = name;
+              this.doj = doj;
+              this.mobile = mobile;
+        }
+
+        public String getName(){
+            return name;
+        }
+        public Date getDoj(){
+            return doj;
+        }
+        public List<String> getMobile(){
+            return mobile;
+        }
+
+        @Override
+        public String toString(){
+            return "Employee{"+
+                    "name='"+name+ '\''+ // name='xxxx'
+                    ", doj=" +doj+
+                    ", mobile=" +mobile+
+                    "}";
+            }
+
+
+        public static void main(String[] args){
+           // List<String> moblies = new ArrayList<>();
+           // moblies.add("")
+            Employee employee = new Employee("Basant",new Date(),
+                    Arrays.stream(new String[]{"1234","5678"}).collect(Collectors.toList()));
+            employee.getName();
+            System.out.println(employee);
+        }
+
+    }
 }

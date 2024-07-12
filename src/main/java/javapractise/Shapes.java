@@ -14,7 +14,8 @@ public interface Shapes {
         System.out.println("default method");
     }
 
-    //you can add method with static keyword, as of now implementation is not needed from other class
+    //you can add method with static keyword,
+    // as of now implementation is not needed from other class
     //can directly access from Main method
     static void staticMethod(){
         System.out.println("static method");

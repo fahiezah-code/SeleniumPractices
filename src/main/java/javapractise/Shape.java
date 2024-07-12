@@ -8,7 +8,7 @@ abstract class Shape {
         this.color = color;
     }
 
-    // if don't give abstrat keyword, need to add body
+    // if don't give abstract keyword, need to add body
      abstract double area();
      abstract String info();
 

@@ -39,6 +39,8 @@ public class AmazonTests
         driver.findElement(By.xpath("//li[@id='p_89/ProCase']//i[@class='a-icon a-icon-checkbox']")).click();
        // Thread.sleep(2000);
         driver.findElement(By.xpath("//span[contains(text(),'$350 a $750')]")).click();
+
+
        // Thread.sleep(3000);
         amazonpage = new AmazonPageObject(driver);
         amazonpage.getProductPrices();
